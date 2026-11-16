@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "https://mini.tolyxskins.ru/$1"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Proxied-By", "value": "vercel-tolyx" }
+      ]
+    }
+  ]
+}
